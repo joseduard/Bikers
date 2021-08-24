@@ -1,5 +1,5 @@
-html, body {
-    /* height: 100%; */
+body {
+    font-family: sans-serif;
 }
 
 .container {
@@ -14,52 +14,97 @@ html, body {
     background-color: blue;
 
 }
+
 .container__right {
     width: 50%;
     height: 100vh;
-    background-color: violet;
+    
 }
+
+.news--title {
+    font-weight: bold;
+    font-size: 1.8rem;
+    padding:1.5rem 1rem;
+    background-color: #f9f9f9;
+}
+
 .articles {
-    background-color: red;
+    
     display: flex;
     /* autorise le retour a la ligne des éléments qui dépassent */
     flex-wrap: wrap;
+    border-bottom: 1px solid #eaeaea;
 }
 
 .article {
-    background-color: yellowgreen;
+    background-color: white;
     width: 50%;
-    padding: 2rem;
+    padding: 1rem;
     box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-left: none;
+    border-bottom: none;
+    /* nos items prennent 50% de la largeur du parent. */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .article__category {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    text-align: center;
 
+    
+}
+
+.article__category--maintenance {
+    background-color: #98DC62;
+    width: 25%;
+}
+
+.article__category--news {
+    background-color: #0766F0;
+}
+
+.article__category--motoweek {
+    background-color: #DC5E53;
 }
 
 .article__title {
+    font-weight: bold;
+    font-size: 1.6rem;
 
 }
 
-.article__info {
-
-}
+.article__info {}
 
 .article__info__picture {
     width: 25px;
     height: 25px;
+    vertical-align: middle;
 
 }
-.artcle__info__author {
+
+.article__info__author {
     font-weight: bold;
+    font-size: 0.8rem;
 }
 
 .article__info__date {
-    color: lightgray
+    color: lightgray;
+    font-size: 0.8rem;
 }
-.article__content {
 
-}
+.article__content {}
+
 .article__read {
-
+    font-weight: bold;
+    color:#007bff;
+    text-decoration: underline ;
+    cursor: pointer;
 }
