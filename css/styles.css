@@ -1,0 +1,65 @@
+html, body {
+    /* height: 100%; */
+}
+
+.container {
+    display: flex;
+    /* height: 100%; */
+
+}
+
+.container__left {
+    width: 50%;
+    height: 100vh;
+    background-color: blue;
+
+}
+.container__right {
+    width: 50%;
+    height: 100vh;
+    background-color: violet;
+}
+.articles {
+    background-color: red;
+    display: flex;
+    /* autorise le retour a la ligne des éléments qui dépassent */
+    flex-wrap: wrap;
+}
+
+.article {
+    background-color: yellowgreen;
+    width: 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.article__category {
+
+}
+
+.article__title {
+
+}
+
+.article__info {
+
+}
+
+.article__info__picture {
+    width: 25px;
+    height: 25px;
+
+}
+.artcle__info__author {
+    font-weight: bold;
+}
+
+.article__info__date {
+    color: lightgray
+}
+.article__content {
+
+}
+.article__read {
+
+}
