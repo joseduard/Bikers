@@ -69,10 +69,12 @@ body {
 
 .article__category--news {
     background-color: #0766F0;
+    width: 25%;
 }
 
-.article__category--motoweek {
+.article__category--favourite {
     background-color: #DC5E53;
+    width: 25%;
 }
 
 .article__title {
