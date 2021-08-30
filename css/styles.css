@@ -1,174 +1,343 @@
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .container {
-    display: flex;
-    /* height: 100%; */
-
+  display: flex;
+  /* height: 100%; */
 }
 
-.container__left {
-    width: 50%;
-    height: 100vh;
-    background-image: url('/jpg.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
-    padding: 1rem 1rem;
-    /* position: relative; */
-
-
+#container__left {
+  width: 50%;
+  height: 100vh;
+  background-image: url('/images/jpg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 1rem 1rem
 }
 
-.title{
-    color:black;
-    text-transform:uppercase;
-    font-size: 2rem;
-    width: 250px;
-    display: flex;
-    align-items: flex-start;
+.contact #container__left {
+  background-image: url('/images/aerial.jpg');
+  /* <a href="https://fr.freepik.com/photos/nature">Nature photo créé par wirestock - fr.freepik.com</a> */
+  background-size: cover;
+  background-position: center;
 }
+
+.title {
+  color: black;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 250px;
+  display: flex;
+  align-items: flex-start;
+}
+
 .title__text {
-    font-weight: bold;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-  }
-  
-  .title__img {
-    width: 100px;
-    height: 100px;
-    margin-right: 1rem;
-  }
-  
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+  color: white;
+}
+
+.title__img {
+  width: 100px;
+  height: 100px;
+  margin-right: 1rem;
+  color: white;
+}
+
 .intro {
-    /* rgba : le a = l'alpha = la transparence. entre 0 et 1 */
-    background-color: rgba(170, 170, 170, 0.5);
-    color: white;
-    padding: 1.5rem 1rem 1.5rem 5rem;
-    text-align: right;
+  /* rgba : le a = l'alpha = la transparence. entre 0 et 1 */
+  background-color: rgba(170, 170, 170, 0.5);
+  color: white;
+  padding: 1.5rem 1rem 1.5rem 5rem;
+  text-align: right;
 }
+
 .intro__title {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
+
 .intro__subtitle {
-    font-size: 1rem;
-    font-style: italic;
-    font-weight: normal;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: normal;
 }
+
 .intro__desc {
-    line-height: 1.2rem;
+  line-height: 1.2rem;
 }
+
 .bottom-links {
-    color: white;
-    text-align: right;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
-    cursor: pointer;
-    /* position: absolute;
-    bottom:0.5rem ;
-    right:1rem ; */
+  color: white;
+  text-align: right;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-evenly;
 }
+
+.bottom-links a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 0 0 4px #333;
+}
+
 /* fin section left articles*/
+
 /* Section right articles*/
-.container__right {
-    width: 50%;
-    height: 100vh;
-    overflow-y: scroll;
-    
+#container__right {
+  width: 50%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .news--title {
-    font-weight: bold;
-    font-size: 1.8rem;
-    padding:1.5rem 1rem;
-    background-color: #f9f9f9;
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 1.5rem 1rem;
+  background-color: #f9f9f9;
 }
 
 .articles {
-    
-    display: flex;
-    /* autorise le retour a la ligne des éléments qui dépassent */
-    flex-wrap: wrap;
-    border-bottom: 1px solid #eaeaea;
+
+  display: flex;
+  /* autorise le retour a la ligne des éléments qui dépassent */
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eaeaea;
 }
 
 .article {
-    background-color: white;
-    width: 50%;
-    padding: 1rem;
-    box-sizing: border-box;
-    border: 1px solid #eaeaea;
-    border-left: none;
-    border-bottom: none;
-    /* nos items prennent 50% de la largeur du parent. */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  background-color: white;
+  width: 50%;
+  padding: 1rem;
+  box-sizing: border-box;
+  border: 1px solid #eaeaea;
+  border-left: none;
+  border-bottom: none;
+  /* nos items prennent 50% de la largeur du parent. */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .article__category {
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    padding: 0.4rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
-    text-align: center;
-
-    
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-align: center;
 }
 
 .article__category--maintenance {
-    background-color: #98DC62;
-    width: 30%;
+  background-color: #98DC62;
+  width: 30%;
 }
 
 .article__category--news {
-    background-color: #0766F0;
-    width: 30%;
+  background-color: #0766F0;
+  width: 30%;
 }
 
 .article__category--favourite {
-    background-color: #DC5E53;
-    width: 30%;
+  background-color: #DC5E53;
+  width: 30%;
 }
 
 .article__title {
-    font-weight: bold;
-    font-size: 1.6rem;
+  font-weight: bold;
+  font-size: 1.6rem;
 
 }
 
-.article__info {}
 
 .article__info__picture {
-    width: 25px;
-    height: 25px;
-    vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
 
 }
 
 .article__info__author {
-    font-weight: bold;
-    font-size: 0.8rem;
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .article__info__date {
-    color: lightgrey;
-    font-size: 0.8rem;
+  color: lightgrey;
+  font-size: 0.8rem;
 }
 
-.article__content {}
 
 .article__read {
-    font-weight: bold;
-    color:#007bff;
-    text-decoration: underline ;
-    cursor: pointer;
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* fin section right articles*/
+
+/* section formulaire 
+  } */
+#container-header {
+  border-bottom: 1px solid #eaeaea;
+  padding: 1em 2em;
+  background-color: #f9f9f9;
+
+}
+
+#contact {
+  display: flex;
+  padding: 2em;
+  margin: 2em;
+  border: 1px solid #eaeaea;
+}
+
+#form {
+  width: 100%;
+}
+
+#form fieldset {
+  border-left: 1px solid #4cced3;
+  padding: .5em 1em 0;
+  margin-bottom: 2em;
+}
+
+#form legend {
+  margin-left: -.3em;
+  font-size: 1.1em;
+}
+
+.form-row {
+  display: flex;
+  margin-bottom: .4em;
+}
+
+.form-row .label {
+  flex-basis: 30%;
+  margin: 0;
+  padding-right: 3%;
+}
+
+/* tous les enfants direct d'un élément ayant la class form-row */
+/* sauf les .label, vu qu'ils ont des règles plus spécifiques définies juste au dessus 😉 */
+.form-row>* {
+  flex-basis: 70%;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group>* {
+  margin: 0 .5em 0 0;
+}
+
+/* moche mais bon, sinon la cochette prend toute la largeur (enfin, 70%), pas sûr que ça rende bien sur tous les navigateurs 🤔 */
+#info {
+  flex-basis: 1em;
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#contact textarea,
+#contact select {
+  background-color: #f9f9f9;
+  border: none;
+  border-bottom: 1px solid #4cced3;
+}
+
+#contact input[type=email] {
+  width: 100%;
+}
+
+#contact textarea {
+  padding: .2em;
+  width: 100%;
+}
+
+#contact button {
+  background-color: #4cced3;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3em;
+  padding: 5px 10px;
+}
+
+/* fin de section formulaire 
+  } */
+
+/* section plan du site*/
+.sitemap__container {
+  width: 100%;
+  height: 100vh;
+  /* Image par <a href="https://pixabay.com/fr/users/decrand-14902286/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4854019">decrand</a> de <a href="https://pixabay.com/fr/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4854019">Pixabay</a> */
+  background-image: url('/images/harley-4854019_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 1rem 1rem
+}
+
+.sitemap__index {
+  color: black;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 250px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.sitemap__title {
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.sitemap__content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+.sitemap__link {
+  text-decoration: none;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+}
+
+.sitemap__home {
+  font-size: 30px;
+  padding: 1.5rem;
+}
+
+.sitemap__nav {
+  font-size: 21px;
+  padding: 1rem 1rem 1rem 5rem;
+}
+
+
+.sitemap__link__point {
+  font-size: 50px;
+}
