@@ -467,7 +467,7 @@ body {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-}
+  }
 
   .article__category--maintenance {
     background-color: #98DC62;
@@ -499,5 +499,20 @@ body {
   }
 
   /* Fin responsive pour mobile index.html */
+  /* Debut responsive pour formulaire */
+
+  #contact {
+    display: flex;
+    padding: 0rem; 
+    margin: 1em;
+    border: none; 
+  }
+
+  #form fieldset {
+    border-left: none; 
+    padding: .5em 1em 0;
+    margin-bottom: 2em;
+  }
 
 }
+
