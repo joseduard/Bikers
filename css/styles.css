@@ -6,6 +6,7 @@ body {
   display: flex;
   /* height: 100%; */
 }
+
 /* Section left articles*/
 
 #container__left {
@@ -61,6 +62,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
+  
 }
 
 .intro__subtitle {
@@ -109,6 +111,7 @@ body {
   /* autorise le retour a la ligne des éléments qui dépassent */
   flex-wrap: wrap;
   border-bottom: 1px solid #eaeaea;
+  padding: 2rem;
 }
 
 .article {
@@ -117,8 +120,7 @@ body {
   padding: 1rem;
   box-sizing: border-box;
   border: 1px solid #eaeaea;
-  border-left: none;
-  border-bottom: none;
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -136,23 +138,23 @@ body {
 
 .article__category--maintenance {
   background-color: #98DC62;
-  width: 30%;
+  width: 35%;
 }
 
 .article__category--news {
   background-color: #0766F0;
-  width: 30%;
+  width: 35%;
 }
 
 .article__category--favourite {
   background-color: #DC5E53;
-  width: 30%;
+  width: 35%;
 }
 
 .article__title {
   font-weight: bold;
   font-size: 1.6rem;
-
+  margin: 1rem 0rem;
 }
 
 
@@ -173,12 +175,17 @@ body {
   font-size: 0.8rem;
 }
 
+.article__content {
+  margin-top: 1rem;
+  line-height: 1.2rem;
+}
 
 .article__read {
   font-weight: bold;
   color: #007bff;
   text-decoration: underline;
   cursor: pointer;
+  padding-top: 2.5rem;
 }
 
 /* fin section right articles*/
@@ -339,6 +346,7 @@ body {
 .sitemap__link__point {
   font-size: 50px;
 }
+
 /* Fin de section plan du site*/
 /* Section Mentions légales 
   } */
@@ -348,10 +356,11 @@ body {
   text-shadow: 0px 0px 0px rgb(0 0 0);
 
 }
+
 .legal__container {
   width: 100%;
   height: 100vh;
-  
+
   background-color: white;
   background-size: cover;
   background-position: center;
@@ -361,30 +370,134 @@ body {
   box-sizing: border-box;
   padding: 1rem 1rem
 }
-.legal__sub{
+
+.legal__sub {
   font-size: 20px;
   padding: 0.5rem 2rem;
   font-weight: bold;
   width: 201%;
 }
-.legal__text{
+
+.legal__text {
   padding: 0rem 3rem;
   font-size: 16px;
   width: 100%;
 }
-.legal .title__page{
+
+.legal .title__page {
   color: grey;
 
 }
-.legal__link{
-     /* text-decoration: none; */
-     color: grey;
-     text-shadow: 1px 0px 0px rgb(0 0 0);
+
+.legal__link {
+  /* text-decoration: none; */
+  color: grey;
+  text-shadow: 1px 0px 0px rgb(0 0 0);
 }
-.legal .bottom-links a{
+
+.legal .bottom-links a {
   color: grey;
   text-shadow: 0 0 1px #333;
   padding: 1rem 0rem;
 }
+
 /* Fin de section Mentions légales 
   } */
+
+
+
+@media (max-width: 768px) {
+
+  /* Debut responsive pour mobile index.html */
+
+  .articles {
+
+    display: flex;
+    /* autorise le retour a la ligne des éléments qui dépassent */
+    flex-wrap: wrap;
+    border-bottom: 1px solid #eaeaea;
+    padding: 0rem;
+  }
+
+  .article {
+    background-color: white;
+    width: 50%;
+    padding: 1rem 0.5rem;
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #container__left {
+    height: 62vh;
+    background-image: url('/images/jpg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    width: 100%;
+  }
+
+  #container__right {
+    width: 100%;
+    height: auto;
+    overflow-y: hidden;
+
+  }
+
+  .intro {
+    background-color: rgba(170, 170, 170, 0.5);
+    color: white;
+    padding: -0.5rem 1rem 1.5rem 5rem;
+    text-align: right;
+  }
+
+  .intro__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+  .article__category--maintenance {
+    background-color: #98DC62;
+    width: 63%;
+  }
+
+  .article__category--news {
+    background-color: #0766F0;
+    width: 63%;
+  }
+
+  .article__category--favourite {
+    background-color: #DC5E53;
+    width: 63%;
+  }
+
+  .article__title {
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin: 1rem 0rem;
+  }
+
+  .article__read {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 0.5rem;
+  }
+
+  /* Fin responsive pour mobile index.html */
+
+}
