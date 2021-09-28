@@ -4,7 +4,6 @@ body {
 
 .container {
   display: flex;
-  /* height: 100%; */
 }
 
 /* Section left articles*/
@@ -62,7 +61,7 @@ body {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  
+
 }
 
 .intro__subtitle {
@@ -190,13 +189,12 @@ body {
 
 /* fin section right articles*/
 
-/* section formulaire 
-  } */
+/* section formulaire } */
+
 #container-header {
   border-bottom: 1px solid #eaeaea;
   padding: 1em 2em;
   background-color: #f9f9f9;
-
 }
 
 #contact {
@@ -280,10 +278,9 @@ body {
   padding: 5px 10px;
 }
 
-/* fin de section formulaire 
-  } */
+/* fin de section formulaire } */
 
-/* section plan du site*/
+/* Debutsection plan du site*/
 .sitemap__container {
   width: 100%;
   height: 100vh;
@@ -307,7 +304,6 @@ body {
 }
 
 .title__page {
-
   color: white;
   text-transform: uppercase;
   font-size: 2rem;
@@ -348,7 +344,7 @@ body {
 }
 
 /* Fin de section plan du site*/
-/* Section Mentions légales 
+/* Debut section Mentions légales 
   } */
 #legal {
   width: 25%;
@@ -401,12 +397,11 @@ body {
   padding: 1rem 0rem;
 }
 
-/* Fin de section Mentions légales 
-  } */
+/* Fin de section Mentions légales  } */
 
+/* Media queries */
 
-
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   /* Debut responsive pour mobile index.html */
 
@@ -425,15 +420,16 @@ body {
     padding: 1rem 0.5rem;
     box-sizing: border-box;
     border: 1px solid #eaeaea;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
+
   .container {
     display: flex;
     flex-direction: column;
-    
+
   }
 
   #container__left {
@@ -503,16 +499,39 @@ body {
 
   #contact {
     display: flex;
-    padding: 0rem; 
+    padding: 0rem;
     margin: 1em;
-    border: none; 
+    border: none;
   }
 
   #form fieldset {
-    border-left: none; 
+    border-left: none;
     padding: .5em 1em 0;
     margin-bottom: 2em;
   }
 
-}
+  /* Fin responsive pour formulaire */
+  /* Debut responsive page mentions legals*/
+  .legal .title__page {
+    color: grey;
+    font-size: 1rem;
+    font-weight: normal;
+    text-shadow: none;
+    margin-top: 1rem;
+  }
 
+  .legal__sub {
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    width: 100vw;
+  }
+
+  .legal__text {
+    padding: 0rem 1rem;
+    font-size: 15px;
+    width: 50vh;
+  }
+
+  /* Fin responsive page mentions legals*/
+}
